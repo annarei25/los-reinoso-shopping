@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Los Reinoso Shopping</title>
+    <meta
+      name="description"
+      content="Contacta con Los Reinoso Shopping. Escríbenos tus dudas, pedidos o sugerencias con nuestro formulario y consulta nuestra dirección."
+    />
+    <link
+      rel="canonical"
+      href="https://annarei25.github.io/los-reinoso-shopping/contacto.html"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="contenedor cabecera-interior">
+        <a href="index.html" class="logo-enlace">
+          <img src="img/logo.png" alt="" class="logo" />
+          <span>Los Reinoso Shopping</span>
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="contenedor seccion">
+        <h1>Contacto</h1>
+        <div class="dos-columnas">
+          <section>
+            <h2>Escríbenos</h2>
+            <form class="formulario" action="contacto.html" method="get">
+              <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  required
+                  minlength="3"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="correo"
+                  name="correo"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <div class="campo">
+                <label for="motivo">Motivo del mensaje</label>
+                <select id="motivo" name="motivo" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="producto">Consulta sobre un producto</option>
+                  <option value="pedido">Estado de un pedido</option>
+                  <option value="sugerencia">Sugerencia o reclamo</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="5"
+                  required
+                  minlength="10"
+                ></textarea>
+              </div>
+              <div class="campo-check">
+                <input type="checkbox" id="acepto" name="acepto" required />
+                <label for="acepto"
+                  >Acepto que me respondan a este correo</label
+                >
+              </div>
+              <button type="submit" class="boton">Enviar mensaje</button>
+            </form>
+          </section>
+          <section>
+            <h2>Dónde estamos</h2>
+            <address>
+              Calle Rafael Morales, entre Calle Sol y Virtudes, numero 155 A,
+              Pinar del Rio , Cuba.
+            </address>
+            <p>
+              Atención: lunes a sábado, de 9:00 a 18:00. Venta de garaje los
+              fines de semana
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor pie-interior">
+        <p>&copy; 2026 Los Reinoso Shopping. Todos los derechos reservados.</p>
+        <ul class="redes">
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

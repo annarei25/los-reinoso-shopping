@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta | Los Reinoso Shopping</title>
+  <meta name="description" content="Crea una cuenta en Los Reinoso Shopping para disfrutar de una experiencia de compra más cómoda.">
+  <link rel="canonical" href="https://annarei25.github.io/los-reinoso-shopping/registro.html">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera-interior">
+      <a href="index.html" class="logo-enlace">
+        <img src="img/logo.png" alt="" class="logo">
+        <span>Los Reinoso Shopping</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor seccion">
+      <div class="caja-login">
+        <h1>Crear cuenta</h1>
+        <form class="formulario" action="registro.html" method="post">
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" autocomplete="name">
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required autocomplete="email">
+          </div>
+          <div class="campo">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" required minlength="8" autocomplete="new-password">
+          </div>
+          <div class="campo">
+            <label for="confirmar-contrasena">Confirmar contraseña</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required minlength="8" autocomplete="new-password">
+          </div>
+          <div class="campo-check">
+            <input type="checkbox" id="aceptar" name="aceptar" required>
+            <label for="aceptar">Acepto los términos y condiciones.</label>
+          </div>
+          <button type="submit" class="boton">Crear cuenta</button>
+          <p class="enlaces-extra">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-interior">
+      <p>&copy; 2026 Los Reinoso Shopping. Todos los derechos reservados.</p>
+      <ul class="redes">
+        <li><a href="#">WhatsApp</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
